@@ -177,7 +177,7 @@ bot.add_handler(MessageHandler(auth.my_plan_cmd, filters.command("plan") & filte
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
 api_url = "http://master-api-v3.vercel.app/"
 api_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzkxOTMzNDE5NSIsInRnX3VzZXJuYW1lIjoi4p61IFtvZmZsaW5lXSIsImlhdCI6MTczODY5MjA3N30.SXzZ1MZcvMp5sGESj0hBKSghhxJ3k1GTWoBUbivUe1I"
-cwtoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NTExOTcwNjQsImNvbiI6eyJpc0FkbWluIjpmYWxzZSwiYXVzZXIiOiJVMFZ6TkdGU2NuQlZjR3h5TkZwV09FYzBURGxOZHowOSIsImlkIjoiVWtoeVRtWkhNbXRTV0RjeVJIcEJUVzExYUdkTlp6MDkiLCJmaXJzdF9uYW1lIjoiVWxadVFXaFBaMnAwSzJsclptVXpkbGxXT0djMlREWlRZVFZ5YzNwdldXNXhhVEpPWjFCWFYyd3pWVDA9IiwiZW1haWwiOiJWSGgyWjB0d2FUZFdUMVZYYmxoc2FsZFJSV2xrY0RWM2FGSkRSU3RzV0c5M1pDOW1hR0kxSzBOeVRUMD0iLCJwaG9uZSI6IldGcFZSSFZOVDJFeGNFdE9Oak4zUzJocmVrNHdRVDA5IiwiYXZhdGFyIjoiSzNWc2NTOHpTMHAwUW5sa2JrODNSRGx2ZWtOaVVUMDkiLCJyZWZlcnJhbF9jb2RlIjoiWkdzMlpUbFBORGw2Tm5OclMyVTRiRVIxTkVWb1FUMDkiLCJkZXZpY2VfdHlwZSI6ImFuZHJvaWQiLCJkZXZpY2VfdmVyc2lvbiI6IlEoQW5kcm9pZCAxMC4wKSIsImRldmljZV9tb2RlbCI6IlhpYW9taSBNMjAwN0oyMENJIiwicmVtb3RlX2FkZHIiOiI0NC4yMDIuMTkzLjIyMCJ9fQ.ONBsbnNwCQQtKMK2h18LCi73e90s2Cr63ZaIHtYueM-Gt5Z4sF6Ay-SEaKaIf1ir9ThflrtTdi5eFkUGIcI78R1stUUch_GfBXZsyg7aVyH2wxm9lKsFB2wK3qDgpd0NiBoT-ZsTrwzlbwvCFHhMp9rh83D4kZIPPdbp5yoA_06L0Zr4fNq3S328G8a8DtboJFkmxqG2T1yyVE2wLIoR3b8J3ckWTlT_VY2CCx8RjsstoTrkL8e9G5ZGa6sksMb93ugautin7GKz-nIz27pCr0h7g9BCoQWtL69mVC5xvVM3Z324vo5uVUPBi1bCG-ptpD9GWQ4exOBk9fJvGo-vRg"
+cwtoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NTExOTcwNjQsImNvbiI6eyJpc0FkbWluIjpmYWxzZSwiYXVzZXIiOiJVMFZ6TkdGU2NuQlZjR3h5TkZwV09FYzBURGxOZHowOSIsImlkIjoiVWtoeVRtWkhNbXRTV0RjeVJIcEJUVzExYUdkTlp6MDkiLCJmaXJzdF9uYW1lIjoiVWxadVFXaFBaMnAwSzJsclptVXpkbGxXT0djMlREWlRZVFZ5YzNwdldXNXhhVEpOWjFCWFYyd3pWVDA9IiwiZW1haWwiOiJWSGgyWjB0d2FUZFdUMVZYYmxoc2FsZFJSV2xrY0RWM2FGSkRSU3RzV0c5M1pDOW1hR0kxSzBOeVRUMD0iLCJwaG9uZSI6IldGcFZSSFZOVDJFeGNFdE9Oak4zUzJocmVrNHdRVDA5IiwiYXZhdGFyIjoiSzNWc2NTOHpTMHAwUW5sa2JrODNSRGx2ZWtOaVVUMDkiLCJyZWZlcnJhbF9jb2RlIjoiWkdzMlpUbFBORGw2Tm5OclMyVTRiRVIxTkVWb1FUMDkiLCJkZXZpY2VfdHlwZSI6ImFuZHJvaWQiLCJkZXZpY2VfdmVyc2lvbiI6IlEoQW5kcm9pZCAxMC4wKSIsImRldmljZV9tb2RlbCI6IlhpYW9taSBNMjAwN0oyMENJIiwicmVtb3RlX2FkZHIiOiI0NC4yMDIuMTkzLjIyMCJ9fQ.ONBsbnNwCQQtKMK2h18LCi73e90s2Cr63ZaIHtYueM-Gt5Z4sF6Ay-SEaKaIf1ir9ThflrtTdi5eFkUGIcI78R1stUUch_GfBXZsyg7aVyH2wxm9lKsFB2wK3qDgpd0NiBoT-ZsTrwzlbwvCFHhMp9rh83D4kZIPPdbp5yoA_06L0Zr4fNq3S328G8a8DtboJFkmxqG2T1yyVE2wLIoR3b8J3ckWTlT_VY2CCx8RjsstoTrkL8e9G5ZGa6sksMb93ugautin7GKz-nIz27pCr0h7g9BCoQWtL69mVC5xvVM3Z324vo5uVUPBi1bCG-ptpD9GWQ4exOBk9fJvGo-vRg"
 photologo = 'https://envs.sh/Nf.jpg/IMG20250803704.jpg' #https://envs.sh/fH.jpg/IMG20250803719.jpg
 photoyt = 'https://tinypic.host/images/2025/03/18/YouTube-Logo.wine.png' #https://envs.sh/fH.jpg/IMG20250803719.jpg
 photocp = 'https://tinypic.host/images/2025/03/28/IMG_20250328_133126.jpg'
@@ -820,6 +820,50 @@ async def txt_handler(bot: Client, m: Message):
                 appxkey = url.split('*')[1]
                 url = url.split('*')[0]
 
+            # KALAM PUBLICATION HANDLING - ADDED SECTION
+            elif "kalampublication.in" in url:
+                # For Kalam publication videos
+                headers = {
+                    'User-Agent': 'okhttp/4.12.0',
+                    'Connection': 'keep-alive',
+                    'Accept': '*/*',
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'mobilenumber': 'aDhYejdQcVIyd0IxazlEZg==',
+                    'referer': 'https://testing-news.kalampublication.in'
+                }
+                
+                # Download using curl with headers
+                temp_file = f"{name}.mp4"
+                curl_cmd = [
+                    'curl', '-L', '-o', temp_file,
+                    '-H', f'User-Agent: {headers["User-Agent"]}',
+                    '-H', f'Connection: {headers["Connection"]}',
+                    '-H', f'Accept: {headers["Accept"]}',
+                    '-H', f'Accept-Encoding: {headers["Accept-Encoding"]}',
+                    '-H', f'mobilenumber: {headers["mobilenumber"]}',
+                    '-H', f'referer: {headers["referer"]}',
+                    url
+                ]
+                
+                try:
+                    subprocess.run(curl_cmd, check=True, timeout=300)
+                    if os.path.exists(temp_file):
+                        await helper.send_vid(bot, m, cc, temp_file, thumb, name, None, channel_id, watermark=watermark)
+                        count += 1
+                        os.remove(temp_file)
+                    else:
+                        raise Exception("Download failed - file not created")
+                except subprocess.TimeoutExpired:
+                    await bot.send_message(channel_id, f'⚠️**Downloading Failed**⚠️\n**Name** =>> `{str(count).zfill(3)} {name1}`\n**Url** =>> {link0}\n\n<blockquote><i><b>Failed Reason: Timeout</b></i></blockquote>', disable_web_page_preview=True)
+                    count += 1
+                    failed_count += 1
+                    continue
+                except Exception as e:
+                    await bot.send_message(channel_id, f'⚠️**Downloading Failed**⚠️\n**Name** =>> `{str(count).zfill(3)} {name1}`\n**Url** =>> {link0}\n\n<blockquote><i><b>Failed Reason: {str(e)}</b></i></blockquote>', disable_web_page_preview=True)
+                    count += 1
+                    failed_count += 1
+                    continue
+
             if "youtu" in url:
                 ytf = f"bv*[height<={raw_text2}][ext=mp4]+ba[ext=m4a]/b[height<=?{raw_text2}]"
             elif "embed" in url:
@@ -1193,6 +1237,43 @@ async def text_handler(bot: Client, m: Message):
                            
             elif "d1d34p8vz63oiq" in url or "sec1.pw.live" in url:
                 url = f"https://anonymouspwplayer-b99f57957198.herokuapp.com/pw?url={url}?token={raw_text4}"
+
+            # KALAM PUBLICATION HANDLING - ADDED SECTION
+            elif "kalampublication.in" in url:
+                # For Kalam publication videos
+                headers = {
+                    'User-Agent': 'okhttp/4.12.0',
+                    'Connection': 'keep-alive',
+                    'Accept': '*/*',
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'mobilenumber': 'aDhYejdQcVIyd0IxazlEZg==',
+                    'referer': 'https://testing-news.kalampublication.in'
+                }
+                
+                # Download using curl with headers
+                temp_file = f"{name}.mp4"
+                curl_cmd = [
+                    'curl', '-L', '-o', temp_file,
+                    '-H', f'User-Agent: {headers["User-Agent"]}',
+                    '-H', f'Connection: {headers["Connection"]}',
+                    '-H', f'Accept: {headers["Accept"]}',
+                    '-H', f'Accept-Encoding: {headers["Accept-Encoding"]}',
+                    '-H', f'mobilenumber: {headers["mobilenumber"]}',
+                    '-H', f'referer: {headers["referer"]}',
+                    url
+                ]
+                
+                try:
+                    subprocess.run(curl_cmd, check=True, timeout=300)
+                    if os.path.exists(temp_file):
+                        await helper.send_vid(bot, m, cc, temp_file, thumb, name, None, channel_id, watermark=watermark)
+                        os.remove(temp_file)
+                    else:
+                        raise Exception("Download failed - file not created")
+                except subprocess.TimeoutExpired:
+                    await m.reply_text(f"⚠️𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐮𝐩𝐭𝐞𝐝\n\n🔗𝐋𝐢𝐧𝐤 » `{link}`\n\n<blockquote><b><i>⚠️Failed Reason » Timeout</i></b></blockquote>")
+                except Exception as e:
+                    await m.reply_text(f"⚠️𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐮𝐩𝐭𝐞𝐝\n\n🔗𝐋𝐢𝐧𝐤 » `{link}`\n\n<blockquote><b><i>⚠️Failed Reason » {str(e)}</i></b></blockquote>")
 
             if ".pdf*" in url:
                 url = f"https://dragoapi.vercel.app/pdf/{url}"
