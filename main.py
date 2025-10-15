@@ -820,7 +820,7 @@ async def txt_handler(bot: Client, m: Message):
                 appxkey = url.split('*')[1]
                 url = url.split('*')[0]
 
-            # KALAM PUBLICATION HANDLING - ADDED SECTION
+            # KALAM PUBLICATION HANDLING - FIXED SECTION
             elif "kalampublication.in" in url:
                 # For Kalam publication videos
                 headers = {
@@ -831,6 +831,14 @@ async def txt_handler(bot: Client, m: Message):
                     'mobilenumber': 'aDhYejdQcVIyd0IxazlEZg==',
                     'referer': 'https://testing-news.kalampublication.in'
                 }
+                
+                # CC variable define करें - FIXED
+                cc = (
+                    f"<b>🏷️ Iɴᴅᴇx ID  :</b> {str(count).zfill(3)}\n\n"
+                    f"<b>🎞️  Tɪᴛʟᴇ :</b> {name1} \n\n"
+                    f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
+                    f"\n\n<b>🎓  Uᴘʟᴏᴀᴅ Bʏ : {CR}</b>"
+                )
                 
                 # Download using curl with headers
                 temp_file = f"{name}.mp4"
@@ -1010,7 +1018,7 @@ async def txt_handler(bot: Client, m: Message):
                         res_file = await helper.download_and_decrypt_video(url, cmd, name, appxkey)  
                         filename = res_file  
                         await prog.delete(True) 
-                        if os.exists(filename):
+                        if os.path.exists(filename):
                             await helper.send_vid(bot, m, cc, filename, thumb, name, prog, channel_id, watermark=watermark)
                             count += 1
                         else:
@@ -1238,7 +1246,7 @@ async def text_handler(bot: Client, m: Message):
             elif "d1d34p8vz63oiq" in url or "sec1.pw.live" in url:
                 url = f"https://anonymouspwplayer-b99f57957198.herokuapp.com/pw?url={url}?token={raw_text4}"
 
-            # KALAM PUBLICATION HANDLING - ADDED SECTION
+            # KALAM PUBLICATION HANDLING - FIXED SECTION
             elif "kalampublication.in" in url:
                 # For Kalam publication videos
                 headers = {
@@ -1249,6 +1257,9 @@ async def text_handler(bot: Client, m: Message):
                     'mobilenumber': 'aDhYejdQcVIyd0IxazlEZg==',
                     'referer': 'https://testing-news.kalampublication.in'
                 }
+                
+                # CC variable define करें - FIXED
+                cc = f'**🎞️ Title `{name} [{res}].mp4`\n\n🖇️LNK : <a href="{link}">Click Here</a>\n\n🎓 Uploaded By» {CREDIT}**'
                 
                 # Download using curl with headers
                 temp_file = f"{name}.mp4"
